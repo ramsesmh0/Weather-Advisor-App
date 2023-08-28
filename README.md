@@ -14,7 +14,7 @@ API's:
 
 Creating a weather advisor that suggests what type of clothing items to bring to give the scenario:
 If you are traveling from one city to another, chatGPT compares the data given from the weather API and creates suggestions for appropriate clothing to bring to the destination city. 
-Uses backend to store password and username information and stores preferred cities. 
+Uses the backend server to store password and username information and stores preferred cities. 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
