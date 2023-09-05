@@ -89,7 +89,7 @@ function Weather_container() {
   
 
   function fetchchatgpt(maxtemp, minTemp, rainfall, uvIndex2, humidity){
-    var apikeyChat = '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';
+    var apikeyChat = '';
     var url = 'https://api.openai.com/v1/chat/completions';
     var weather_parametersfirst = 'temp: '+temperature+'F°, '+description+', feels like: '+feelsLike+'F°, uv index: ' +uvIndex+'.';
     var weather_parameterssecond = 'forecast parameters for: ' +days_in_advance+ 'days in advance, max temp: ' +maxtemp+'F°, min temp: '+minTemp+'F°, total precipitation: '+rainfall+' inches, humidity: '+humidity+'%, and uv index: '+uvIndex2+' ';
@@ -132,7 +132,7 @@ function Weather_container() {
 
 
   function fetchWeatherDataFuture(query){
-    var apiKey = '1182cdc066324cd080403024231607'; // Replace with your actual WeatherAPI key
+    var apiKey = ''; // Replace with your actual WeatherAPI key
     var url = 'https://api.weatherapi.com/v1/forecast.json?key=' + apiKey + '&q=' + query + '&days=3&aqi=yes&lang=en';
     return fetch(url)
       .then(response => response.json())
@@ -179,7 +179,7 @@ function Weather_container() {
       return;
     }
     var query = city1;
-    var apiKey = "1182cdc066324cd080403024231607"; // Replace with your actual WeatherAPI key
+    var apiKey = ""; // Replace with your actual WeatherAPI key
     var url =
       "https://api.weatherapi.com/v1/current.json?key=" +
       apiKey +
@@ -214,7 +214,7 @@ function Weather_container() {
         return;
     }
     var query = city2;
-    var apiKey = "1182cdc066324cd080403024231607"; // Replace with your actual WeatherAPI key
+    var apiKey = ""; // Replace with your actual WeatherAPI key
     var url =
       "https://api.weatherapi.com/v1/current.json?key=" +
       apiKey +
@@ -250,7 +250,7 @@ function Weather_container() {
       return;
     }
     var query = city11;
-    var apiKey = "1182cdc066324cd080403024231607"; // Replace with your actual WeatherAPI key
+    var apiKey = ""; // Replace with your actual WeatherAPI key
     var url =
       "https://api.weatherapi.com/v1/forecast.json?key=" +
       apiKey +
@@ -301,7 +301,7 @@ function Weather_container() {
       return;
     }
     var query = city;
-    var apiKey = "1182cdc066324cd080403024231607"; // Replace with your actual WeatherAPI key
+    var apiKey = ""; // Replace with your actual WeatherAPI key
     var url =
       "https://api.weatherapi.com/v1/forecast.json?key=" +
       apiKey +
